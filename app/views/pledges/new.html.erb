@@ -1,0 +1,14 @@
+<h1>New Pledge</h1>
+<%= form_with model: @pledge do |form| %>
+  <div>
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+  <div>
+    <%= form.label :reward_id %>
+    <%= form.text_field :reward_id %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end%>
