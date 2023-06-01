@@ -43,4 +43,10 @@ class ProjectsController < ApplicationController
     )
     redirect_to "/projects"
   end
+
+  def destroy
+    @project = Project.find_by(id: params[:id])
+    @project.destroy
+    redirect_to "/projects", status: :see_other
+  end
 end

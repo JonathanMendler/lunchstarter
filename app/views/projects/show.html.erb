@@ -8,3 +8,4 @@
 <a href="/projects">Back to all projects</a>
 
 <%= link_to "Edit project", edit_project_path(@project) %>
+<%= link_to "Destroy project", project_path(@project), data: {turbo_method: :delete} %>
