@@ -1,10 +1,9 @@
 <h1>All pledges</h1>
 <% @pledges.each do |pledge| %>
-  <h2><%= pledge.name %></h2>
   <p>User_id: <%= pledge.user_id %></p>
   <p>Reward_id: <%= pledge.reward_id %></p>
 <% end %>
 
-<%= link_to "More Info", pledge %>
+<%= link_to "More Info", @pledge %>
 
 <%= link_to "New pledge", new_pledge_path %>
