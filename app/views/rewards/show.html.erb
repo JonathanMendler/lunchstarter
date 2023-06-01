@@ -1,0 +1,13 @@
+
+<h1>Reward info</h1>
+<h2>Rewards </h2>
+
+<p>Project_ID: <%= @reward.project_id %></p>
+<p>Description: <%= @reward.description %></p>
+<p>amount: <%= @reward.amount %></p>
+<p>limit: <%= @reward.limit %></p>
+<p>delivery_date: <%= @reward.delivery_date %></p>
+
+ <%= link_to "Edit reward", edit_reward_path(@reward)%>
+<%= link_to "Destroy reward", reward_path(@reward), data: {turbo_method: :delete} %>
+
