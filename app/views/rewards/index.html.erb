@@ -1,0 +1,13 @@
+
+<h1>All Rewards</h1>
+<% @rewards.each do |reward| %>
+
+  <p>Project ID: <%= reward.project_id %></p>
+  <p>Description: <%= reward.description %></p>
+  <p>Amount: <%= reward.amount %></p>
+  <p>Limit: <%= reward.limit %></p>
+  <p>Delivery date: <%= reward.delivery_date %></p>
+  <%= link_to "More Info", reward %>
+<% end %>
+
+ <%= link_to "New reward", new_reward_path %>

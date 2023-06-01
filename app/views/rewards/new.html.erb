@@ -1,0 +1,26 @@
+<!-- Use the Rails form_with helper to generate a form -->
+<h1>New reward</h1>
+<%= form_with model: @reward do |form| %>
+  <div>
+    <%= form.label :project_id %>
+    <%= form.text_field :project_id %>
+  </div>
+  <div>
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+  <div>
+    <%= form.label :amount %>
+    <%= form.text_field :amount %>
+  </div>
+  <div>
+    <%= form.label :limit %>
+    <%= form.text_field :limit %>
+  </div><div>
+    <%= form.label :delivery_date %>
+    <%= form.text_field :delivery_date %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end%>
