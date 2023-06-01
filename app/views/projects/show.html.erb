@@ -6,3 +6,5 @@
 <p>Start date: <%= @project.start_date %></p>
 <p>End date: <%= @project.end_date %></p>
 <a href="/projects">Back to all projects</a>
+
+<%= link_to "Edit project", edit_project_path(@project) %>
