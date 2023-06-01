@@ -9,6 +9,11 @@ class CategoriesController < ApplicationController
     render :show
   end
 
+  def new
+    @category = Category.new
+    render :new
+  end
+
   def create
     @category = Category.create(
       name: params[:category][:name],

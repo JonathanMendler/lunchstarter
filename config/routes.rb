@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get "/categories" => "categories#index"
   get "/categories/:id" => "categories#show"
   post "/categories" => "categories#create"
+
+  get "/catgeories" => "categories#new"
 end
