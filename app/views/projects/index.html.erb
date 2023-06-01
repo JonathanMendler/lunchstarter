@@ -1,0 +1,12 @@
+<h1>All projects</h1>
+<% @projects.each do |project| %>
+ <h2><%= project.title%></h2>
+  <p>Category ID: <%= project.category_id %></p>
+  <p>Description: <%= project.description %></p>
+  <p>Goal amount: <%= project.goal_amount %></p>
+  <p>Start date: <%= project.start_date %></p>
+  <p>End date: <%= project.end_date %></p>
+<%= link_to "More Info", project %>
+<% end %>
+
+<%= link_to "New Project", new_project_path %>
